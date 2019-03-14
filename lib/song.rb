@@ -34,7 +34,7 @@ def self.find_by_name(name)
 end
 
 def self.find_or_create_by_name(name)
-  if self.all.name.include?(name)
+  if self.name.include?(name)
     song_1 =self.find_by_name(name)
   else self.create_by_name(name)
   end 

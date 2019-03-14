@@ -45,7 +45,8 @@ def self.alphabetical
   @@all.sort_by{|thing| thing.name}
 end
 
-def self.new_from_filename
+def self.new_from_filename (input)
+  
 end
 
 end

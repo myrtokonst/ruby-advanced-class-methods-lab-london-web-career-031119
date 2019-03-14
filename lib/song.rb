@@ -54,7 +54,15 @@ def self.new_from_filename (input)
   new_song
 end
 
-
+def self.create_from_filename(input)
+  new_song = self.new
+  array=input.split(/[-\.]/)
+  new_song.name = array[1].strip
+  new_song.artist_name = array[0].strip
+  new_song.save
+  new_song
+end 
+  
 def self.destroy_all
   self.all.clear
 end 

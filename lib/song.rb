@@ -48,7 +48,7 @@ end
 def self.new_from_filename (input)
   new_song = self.new 
   array=input.split(/[-\.]/)
-  #binding.pry
+  binding.pry
   new_song.name = array[1]
   new_song.artist_name = array[0]
   new_song

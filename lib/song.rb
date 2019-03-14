@@ -43,7 +43,6 @@ end
 
 def self.alphabetical
   @@all.sort_by{|thing| thing.name}
-
 end
 
 

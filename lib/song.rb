@@ -43,7 +43,7 @@ end
 
 def self.alphabetical
   binding.pry
-@@all.sort {|long_thing| long_thing.name.sort!}
+@@all.sort {|long_thing| long_thing.name}
 end
 
 

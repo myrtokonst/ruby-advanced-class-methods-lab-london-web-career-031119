@@ -42,8 +42,8 @@ end
 
 def self.alphabetical
 new_array = []
-@@all.each do |long_thing|
-  new_array << long_thing.name
+@@all.sort do |long_thing|
+ long_thing.name
 end 
 new_array.sort
 end

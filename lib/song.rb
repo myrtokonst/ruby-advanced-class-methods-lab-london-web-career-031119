@@ -41,7 +41,11 @@ def self.find_or_create_by_name(name)
 end 
 
 def self.alphabetical
-@@all.sort.name
+new_array = []
+@@all.each do |long_thing|
+  new_array << long_thing.name
+end 
+new_array.sort
 end
 
 

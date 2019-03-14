@@ -42,5 +42,7 @@ end
 
 def self.alphabetical
 @@all.sort.name
+end
+
 
 end

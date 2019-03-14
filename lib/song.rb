@@ -50,7 +50,7 @@ def self.new_from_filename (input)
 end
 
 
-def destroy_all
+def self.destroy_all
   self.all.clear
 end 
 end
